@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS venues (
+
+    id SERIAL PRIMARY KEY,
+
+    name VARCHAR(255) NOT NULL,
+
+    location VARCHAR(255) NOT NULL,
+
+    price INTEGER NOT NULL,
+
+    capacity INTEGER NOT NULL,
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);
